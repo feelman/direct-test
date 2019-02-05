@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+@media (max-width: 320px) {
+  .blocks {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+.item {
+  display: block;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.item:hover,
+.item:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+.item__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 241px;
+  height: 196px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+}
+.item__block--block1 {
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url(../img/img1.jpg);
+}
+.item__block--block2 {
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url(../img/img2.jpg);
+}
+.item__block--block3 {
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url(../img/img3.jpg);
+}
+.item__block--block4 {
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url(../img/img4.jpg);
+}
+.item__block-img {
+  display: none;
+}
+.item__block-header {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.item__block-description {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .item__block {
+    width: 258px;
+    height: 208px;
+  }
+}
+@media (max-width: 320px) {
+  .item {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .item__block {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 288px;
+    height: auto;
+    background: none;
+  }
+  .item__block-img {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+  .item__block-review {
+    width: 175px;
+    margin-left: 12px;
+  }
+  .item__block-header {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+  }
+  .item__block-description {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+  }
+}
